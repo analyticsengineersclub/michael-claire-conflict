@@ -4,7 +4,7 @@ with customer_orders as (
         , count(*) as n_orders
         , min(created_at) as first_order_at
     -- a comment is here
-    from `analytics-engineers-club`.`coffee_shop`.`orders` 
+    FROM `analytics-engineers-club`.`coffee_shop`.`orders` 
     group by 1
 )
 
