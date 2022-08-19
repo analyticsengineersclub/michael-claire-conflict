@@ -14,7 +14,8 @@ select
    , customers.email
    , coalesce(customer_orders.n_orders, 0) as n_orders
    , customer_orders.first_order_at
-   -- this is a comment
-FROM `analytics-engineers-club.coffee_shop.customers` as customers
+
+FROM `analytics-engineers-club`.`coffee_shop`.`customers` as customers
+
 left join  customer_orders
   on  customers.id = customer_orders.customer_id 
